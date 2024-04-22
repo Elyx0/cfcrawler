@@ -1,0 +1,26 @@
+[package]
+name = "cfcrawler"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.37.0", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde_json = "1.0"
+base64 = "0.22.0"
+stfu8 = "0.2.7"
+dotenv = "0.15.0"
+
+[[bin]]
+name = "quick"
+path = "src/quickcheck.rs"
+
+[[bin]]
+name = "proxy"
+path = "src/proxy.rs"
+
+[[bin]]
+name = "rename"
+path = "src/rename.rs"

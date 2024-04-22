@@ -1,0 +1,6 @@
+/target
+/saves
+/replays
+.vscode
+.env
+.DS_Store
